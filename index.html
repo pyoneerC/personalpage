@@ -11,7 +11,7 @@ body {
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   color: #343a40;
 }
 
@@ -49,7 +49,7 @@ nav ul li:last-child {
 
 /* Enhanced link styles */
 a {
-  color: #1c6ef2;
+  color: #03fa87;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -60,6 +60,7 @@ a:hover {
 
 /* Improved main content layout */
 main {
+  background-color: #343a40;
   max-width: 900px;
   margin: auto;
   padding: 30px;
@@ -68,7 +69,7 @@ main {
 /* Enhanced section styling */
 section {
   margin-bottom: 40px;
-  background-color: #ffffff;
+  background-color:rgb(0, 0, 0);
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -95,6 +96,35 @@ footer p {
   margin: 0;
 }
 
+section {
+      margin-bottom: 40px;
+      background-color: grey;
+      padding: 40px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; /* Add transition for smooth animation */
+    }
+
+    /* Updated list styles */
+    ul {
+      padding-left: 0;
+      margin-bottom: 0; /* Ensure consistent spacing */
+    }
+
+    /* Collapsed state for sections */
+    section.collapsed {
+      max-height: 80;
+      padding:0vmax;
+      overflow:hidden;
+    }
+
+    /* Hide section headers for collapsed state */
+    section.collapsed h2 {
+      display:inline-block;
+    }
+
   </style>
 </head>
 <body>
@@ -103,6 +133,9 @@ footer p {
     <nav>
       <ul>
         <li><a href="https://github.com/pyoneerC">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/máximo-comperatore-74399b278/?originalSubdomain=ar">LinkedIn</a></li>
+        <li><a href="mailto:maxcomperatore@gmail.com">Email</a></li>
+        <li><a href="https://alowlevelbunker.blogspot.com">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -111,7 +144,7 @@ footer p {
       <h2>About Me</h2>
       <p>Hello, I'm Max. My passion lies in games (development) and programming. I find joy in crafting immersive experiences and exploring the details of software development.</p>
       <p>My interest in realistic rendering started when I was playing video games as a teenager.</p>
-      <p>I am currently focused on engine programming, both through formal education in game programming and self-directed study. Additionally, I have an interest in DevOps, optimization, and tools development.</p>
+      <p>I am currently focused on engine programming, both through formal education and self-directed study. Additionally, I have an interest in DevOps, optimization, and tools development.</p>
       <p>In my spare time, I share insights and knowledge about software engineering and programming on my <a href="https://alowlevelbunker.blogspot.com">blog</a>.</p>
     </section>    
     <section>
@@ -125,21 +158,26 @@ footer p {
         <li>RenderDoc</li>
         <li>Intel Vtune</li>
         <li>3D math</li>
+        <li>TeamCity</li>
         <li>Source Control: Git and Perforce</li>
-        <h3 style="text-align: left;">Soft Skills</h3>
-        <li>Problem-solving</li>
-        <li>Collaboration</li>
-        <li>Time management</li>
-        <li>Strong verbal and written communication</li>
-        <li>Adaptability</li>
-        <li>Attention to detail</li>
-        <li>Creativity</li>
       </ul>
+    </section>
+    <section>
+      <ul>
+      <h2 style="text-align: left;">Soft Skills</h2>
+      <li>Problem-solving</li>
+      <li>Collaboration</li>
+      <li>Time management</li>
+      <li>Strong verbal and written communication</li>
+      <li>Adaptability</li>
+      <li>Attention to detail</li>
+      <li>Creativity</li>
+      <li>Friendly and approachable</li>
+    </ul>
     </section>
     <section>
       <h2>Projects</h2>
       <ul>
-        <li><a href="https://store.steampowered.com/app/2385480/Active_and_Operational/">Active and Operational</a></li>
         <li><a href="https://gontoregames.itch.io/the-great-chocolate-caper">The Great Chocolate Caper</a></li>
         <li><a href="https://comp99.itch.io/pixelateddrift">Pixelated Drift</a></li>
         <li><a href="https://smrt-entertainment.itch.io/the-rock-dream">The Rock Dream</a></li>
@@ -154,15 +192,32 @@ footer p {
       </ul>
     </section>
     <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>Volunteer gameplay programming at Inteliciallis (Sep 2023 - Feb 2024)
+          <ul>
+            <li>Collaborated with others to create immersive UI, sounds, and clean code for the game.</li> 
+            <li>Worked on <a href="https://store.steampowered.com/app/2385480/Active_and_Operational/">Active and Operational</a> with a team of 5 people.</li>
+            <li>Leveraged Agile methodologies.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Associate Degree in Video Game Programming - University of Mendoza</li>
+          <li>High School Diploma</li>
+      </ul>
+    </section>  
+    <section>
       <h2>Strengths</h2>
       <ul>
         <li>Self-motivated</li>
         <li>Passionate</li>
         <li>Quick learner</li>
         <li>Team player</li>
-        <li>Good problem solver</li>
         <li>Strong work ethic</li>
-        <li>Organized and detail-oriented</li>
         <li>Ability to write clean, maintainable, and efficient code</li>
       </ul>
     </section>
@@ -178,28 +233,9 @@ footer p {
         <li>Sometimes I get too absorbed in my work</li>
         <li>Need to improve my networking skills</li>
         <li>Graphics programming</li>
+        <li>.NET</li>
       </ul>
-    </section>
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>Volunteer gameplay programming at Inteliciallis (Sep 2023 - Feb 2024)
-          <ul>
-            <li>Leveraged Agile methodologies.</li>
-            <li>Worked on a game project with a team of 5 people.</li>
-            <li>Collaborated with others to create immersive UI, sounds, and clean code for the game.</li> 
-          </ul>
-        </li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>Associate Degree in Video Game Programming - University of Mendoza</li>
-          <li>High School Diploma</li>
-      </ul>
-    </section>      
+    </section>        
     <section>
       <h2>Certifications</h2>
       <ul>
@@ -217,14 +253,66 @@ footer p {
         <li>800 hours in Rocket League.</li>
       </ul>
     </section>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>My inbox is always open for you to reach out, whether it's to discuss an opportunity, have a question for me, or just want to say hello.</p>
-      <p><a href="mailto:maxcomperatore@gmail.com">Say Hi</a></p>
-    </section>
   </main>
   <footer>
     <p>&copy; 2024 Maximo Comperatore. All rights reserved.</p>
   </footer>
 </body>
 </html>
+<script>
+  // JavaScript for making sections draggable and collapsible
+
+  const sections = document.querySelectorAll('section');
+  let draggedSection = null;
+
+  // Function to handle drag start event
+  function dragStart(event) {
+    draggedSection = this;
+    setTimeout(() => {
+      this.style.opacity = '0.5'; // Add opacity effect during drag
+    }, 0);
+  }
+
+  // Function to handle drag end event
+  function dragEnd() {
+    this.style.opacity = ''; // Remove opacity effect after drag
+  }
+
+  // Function to handle drag over event
+  function dragOver(event) {
+    event.preventDefault();
+  }
+
+  // Function to handle drop event
+  function drop(event) {
+    event.preventDefault();
+    const targetSection = this;
+    const targetIndex = Array.from(targetSection.parentElement.children).indexOf(targetSection);
+    const draggedIndex = Array.from(sections).indexOf(draggedSection);
+    if (targetIndex > draggedIndex) {
+      targetSection.parentElement.insertBefore(draggedSection, targetSection.nextElementSibling);
+    } else {
+      targetSection.parentElement.insertBefore(draggedSection, targetSection);
+    }
+  }
+
+  // Add drag and drop event listeners to sections
+  sections.forEach(section => {
+    section.setAttribute('draggable', 'true');
+    section.addEventListener('dragstart', dragStart);
+    section.addEventListener('dragend', dragEnd);
+    section.addEventListener('dragover', dragOver);
+    section.addEventListener('drop', drop);
+  });
+
+  // Function to toggle section collapse/expand
+  function toggleSection(event) {
+    const section = event.currentTarget.parentElement;
+    section.classList.toggle('collapsed');
+  }
+
+  // Add click event listener to section headers to toggle collapse/expand
+  document.querySelectorAll('section h2').forEach(header => {
+    header.addEventListener('click', toggleSection);
+  });
+</script>
